@@ -1,0 +1,11 @@
+ epochs: 100 
+ batch_size: 64
+ learning_rate: 0.001 # start learning rate 
+ lr_scheduler: 'CosineAnnealingLR' # learning rate scheduler: 'ReduceLROnPlateau', 'StepLR', 'MultiStepLR', 'ExponentialLR', or 'CosineAnnealingLR'
+ num_workers: 2 
+ output_folder: 'logging' # folder to save logs and checkpoints 
+ model: 'resnet18' # model to train 
+ pretrained: true # whether to use pretrained model 
+ dataset_name: 'flowers102' # dataset to train on 
+ max_classes: -1 # number of classes to use, -1 for all 
+ checkpoint: '' # path to checkpoint or '' if not used
